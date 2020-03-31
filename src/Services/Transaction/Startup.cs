@@ -26,7 +26,7 @@
             services.AddTransactionFramework(Configuration);
             services.AddScoped<ExceptionHandlerMiddleware>();
             services.AddScoped<IIdentityService, IdentityService>();
-            services.AddApplicationInsightsTelemetry(Configuration);
+            //services.AddApplicationInsightsTelemetry(Configuration);
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info { Title = "Simple Transaction Processing", Version = "v1" });
             });
@@ -42,7 +42,7 @@
             }
 
             app.UseExceptionHandlerMiddleware(); 
-            log.AddApplicationInsights(app.ApplicationServices, LogLevel.Information);
+            //log.AddApplicationInsights(app.ApplicationServices, LogLevel.Information);
             app.UseSwagger();
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Simple Transaction Processing v1");

@@ -23,6 +23,7 @@
             new User { AccountNumber = 3628101, Currency = "EUR", FullName = "Simon Peter", Username = "speter", Password = "test@123" },
             new User { AccountNumber = 3637897, Currency = "EUR", FullName = "Glen Woodhouse", Username = "gwoodhouse", Password = "pass@123" },
             new User { AccountNumber = 3648755, Currency = "EUR", FullName = "John Smith", Username = "jsmith", Password = "admin@123" },
+            new User { AccountNumber = 3648756, Currency = "EUR", FullName = "Admin Testing", Username = "Admin", Password = "Passw0rd" },
         };
 
         private readonly AppSettings _appSettings;
